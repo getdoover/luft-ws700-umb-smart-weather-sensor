@@ -36,6 +36,8 @@ class LuftWs700UmbSmartWeatherSensorApplication(Application):
         self._register_start_address = start_address
         self._register_count = register_count
         self._address_to_meta = address_to_meta
+        
+        print("setup complete")
 
     async def main_loop(self):
         # If no registers configured, idle briefly
@@ -49,37 +51,24 @@ class LuftWs700UmbSmartWeatherSensorApplication(Application):
             modbus_id=1,
             start_address=self._register_start_address,
             num_registers=self._register_count,
-            register_type=4,
+            register_type=3,
             configure_bus=True,
         )
+        values = list(values)
         tags: Dict[str, float] = {}
-        
-        if isinstance(values, list):
-            for address, (tag_key, scale, is_signed) in self._address_to_meta.items():
-                idx = address - int(self._register_start_address)
-                if 0 <= idx < len(values):
-                    raw = int(values[idx])
-                    if is_signed:
-                        raw = raw - 0x10000 if raw & 0x8000 else raw
-                    try:
-                        converted = raw / scale if scale else float(raw)
-                    except ZeroDivisionError:
-                        converted = float(raw)
-                    tags[tag_key] = converted
-        elif isinstance(values, int):
-            # Degenerate case: only one register requested
-            address = int(self._register_start_address)
-            meta = self._address_to_meta.get(address)
-            if meta:
-                tag_key, scale, is_signed = meta
-                raw = int(values)
+        for address, (tag_key, scale, is_signed) in self._address_to_meta.items():
+            idx = address - int(self._register_start_address)
+            if 0 <= idx < len(values):
+                raw = int(values[idx])
                 if is_signed:
                     raw = raw - 0x10000 if raw & 0x8000 else raw
-                converted = raw / scale if scale else float(raw)
+                try:
+                    converted = raw / scale if scale else float(raw)
+                except ZeroDivisionError:
+                    converted = float(raw)
                 tags[tag_key] = converted
-
         if tags:
-            self.set_tags(tags)
+            await self.set_tags(tags)
 
-        self.ui.update()
+        self.ui.update(tags)
         await self.wait_for_interval(2)

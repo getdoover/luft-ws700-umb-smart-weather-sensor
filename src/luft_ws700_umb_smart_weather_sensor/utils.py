@@ -10,6 +10,20 @@ def to_camel_case(name: str) -> str:
         return ''
     return parts[0][0].lower() + parts[0][1:] + ''.join(p.capitalize() for p in parts[1:])
 
+def get_reg_names(csv_path: Path) -> list[str]:
+    reg_names = {}
+    with csv_path.open("r", newline="") as f:
+        reader = csv.reader(f)
+        header_skipped = False
+        for row in reader:
+            if not header_skipped:
+                header_skipped = True
+                continue
+            if not row:
+                continue
+            reg_names[to_camel_case(row[3].strip())] = row[3].strip()
+    return reg_names
+
 
 def load_modbus_register_map(csv_path: Path) -> tuple[int, int, Dict[int, Tuple[str, float, bool]]]:
     """Parse weather_registers.csv into a contiguous register span and metadata.
@@ -33,9 +47,9 @@ def load_modbus_register_map(csv_path: Path) -> tuple[int, int, Dict[int, Tuple[
                 continue
             try:
                 register_address_str = row[1].strip()
-                value_name_str = row[2].strip()
-                scale_str = row[3].strip()
-                signed_flag_str = row[4].strip().lower()
+                value_name_str = row[3].strip()
+                scale_str = row[4].strip()
+                signed_flag_str = row[5].strip().lower()
             except IndexError:
                 continue
 

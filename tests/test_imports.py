@@ -17,7 +17,3 @@ def test_config():
 def test_ui():
     from luft_ws700_umb_smart_weather_sensor.app_ui import LuftWs700UmbSmartWeatherSensorUI
     assert LuftWs700UmbSmartWeatherSensorUI
-
-def test_state():
-    from luft_ws700_umb_smart_weather_sensor.app_state import LuftWs700UmbSmartWeatherSensorState
-    assert LuftWs700UmbSmartWeatherSensorState

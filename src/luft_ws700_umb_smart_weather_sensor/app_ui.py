@@ -5,9 +5,9 @@ from .utils import to_camel_case
 
 
 class LuftWs700UmbSmartWeatherSensorUI:
-    def __init__(self):
+    def __init__(self, config):
         # Build NumericVariables for all weather values that are enabled in config
-        self._config = LuftWs700UmbSmartWeatherSensorConfig()
+        self._config = config
         # Mapping of config flag -> human-friendly label (matches CSV value_name)
         self._flag_to_label = {
             "show_rel_humidity_average": "Avg Relative humidity",

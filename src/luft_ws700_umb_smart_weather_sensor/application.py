@@ -19,14 +19,13 @@ class LuftWs700UmbSmartWeatherSensorApplication(Application):
         super().__init__(*args, **kwargs)
 
         self.started: float = time.time()
-        self.ui: LuftWs700UmbSmartWeatherSensorUI = None
         self._register_start_address: int | None = None
         self._register_count: int | None = None
         # address -> (tag_key, scale, is_signed)
         self._address_to_meta: Dict[int, Tuple[str, float, bool]] = {}
 
     async def setup(self):
-        self.ui = LuftWs700UmbSmartWeatherSensorUI()
+        self.ui = LuftWs700UmbSmartWeatherSensorUI(self.config)
         self.ui_manager.add_children(*self.ui.fetch())
 
         # Load register map from CSV via utils
@@ -45,7 +44,7 @@ class LuftWs700UmbSmartWeatherSensorApplication(Application):
             return
 
         # Single read across the full address span
-        values = self.modbus_iface.read_registers(
+        values = await self.modbus_iface.read_registers(
             bus_id="default",
             modbus_id=1,
             start_address=self._register_start_address,

@@ -47,7 +47,7 @@
                             "x-name": "serial_port",
                             "x-hidden": false,
                             "type": "string",
-                            "default": "/dev/ttyS0"
+                            "default": "/dev/ttyAMA0"
                         },
                         "serial_baud": {
                             "title": "Serial Baud",

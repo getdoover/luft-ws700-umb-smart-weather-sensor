@@ -10,12 +10,14 @@ class LuftWs700UmbSmartWeatherSensorUI:
         # Build NumericVariables for all weather values that are enabled in config
         self._config = config
         self._reg_names = get_reg_names(Path(__file__).with_name("weather_registers.csv"))
+        
         for flag_name, label in self._reg_names.items():
+            print(f"flag_name: {flag_name}, label: {label}")
             if not hasattr(self._config, f"show_{flag_name}"):
+                print(f"no show_{flag_name} attribute found")
                 continue
-            if getattr(self._config, f"show_{flag_name}").value:
-                var = ui.NumericVariable(flag_name, label, precision=2)
-                setattr(self, flag_name, var)
+            var = ui.NumericVariable(flag_name, label, precision=2, hidden=(not getattr(self._config, f"show_{flag_name}").value))
+            setattr(self, flag_name, var)
 
     def fetch(self):
         ui_vars = []

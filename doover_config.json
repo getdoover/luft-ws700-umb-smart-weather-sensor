@@ -120,264 +120,264 @@
                     "additionalElements": true,
                     "required": []
                 },
-                "show_relative_humidity_average": {
-                    "title": "Show Relative Humidity Average",
-                    "x-name": "show_relative_humidity_average",
+                "show_avg_relative_humidity": {
+                    "title": "Show Avg Relative Humidity",
+                    "x-name": "show_avg_relative_humidity",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_relative_air_pressure": {
-                    "title": "Show Relative Air Pressure",
-                    "x-name": "show_relative_air_pressure",
+                "show_avg_relative_air_pressure": {
+                    "title": "Show Avg Relative Air Pressure",
+                    "x-name": "show_avg_relative_air_pressure",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_wind_direction_min": {
-                    "title": "Show Wind Direction Min",
-                    "x-name": "show_wind_direction_min",
+                "show_min_wind_direction": {
+                    "title": "Show Min Wind Direction",
+                    "x-name": "show_min_wind_direction",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_wind_direction_max": {
-                    "title": "Show Wind Direction Max",
-                    "x-name": "show_wind_direction_max",
+                "show_max_wind_direction": {
+                    "title": "Show Max Wind Direction",
+                    "x-name": "show_max_wind_direction",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
                 "show_compass": {
                     "title": "Show Compass",
                     "x-name": "show_compass",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
                 "show_precipitation_type": {
-                    "title": "Show Precipitation Type",
+                    "title": "Show Precipitation type",
                     "x-name": "show_precipitation_type",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_wind_measurement_quality": {
-                    "title": "Show Wind Measurement Quality",
-                    "x-name": "show_wind_measurement_quality",
+                "show_wind_measurement_quality_(%)": {
+                    "title": "Show Wind Measurement Quality (%)",
+                    "x-name": "show_wind_measurement_quality_(%)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_global_radiation_average": {
-                    "title": "Show Global Radiation Average",
-                    "x-name": "show_global_radiation_average",
+                "show_avg_global_radiation": {
+                    "title": "Show Avg Global Radiation",
+                    "x-name": "show_avg_global_radiation",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_air_temperature_average": {
-                    "title": "Show Air Temperature Average",
-                    "x-name": "show_air_temperature_average",
+                "show_air_temperature_(\u00b0c)": {
+                    "title": "Show Air Temperature (\u00b0C)",
+                    "x-name": "show_air_temperature_(\u00b0c)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_wind_chill_temperature": {
-                    "title": "Show Wind Chill Temperature",
-                    "x-name": "show_wind_chill_temperature",
+                "show_wind_chill_temperature_(\u00b0c)": {
+                    "title": "Show Wind Chill Temperature (\u00b0C)",
+                    "x-name": "show_wind_chill_temperature_(\u00b0c)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_heating_temperature_wind": {
-                    "title": "Show Heating Temperature Wind",
-                    "x-name": "show_heating_temperature_wind",
+                "show_heating_temperature_wind_(\u00b0c)": {
+                    "title": "Show Heating Temperature Wind (\u00b0C)",
+                    "x-name": "show_heating_temperature_wind_(\u00b0c)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_heating_temperature_r2s": {
-                    "title": "Show Heating Temperature R2S",
-                    "x-name": "show_heating_temperature_r2s",
+                "show_heating_temperature_r2s_(\u00b0c)": {
+                    "title": "Show Heating Temperature R2S (\u00b0C)",
+                    "x-name": "show_heating_temperature_r2s_(\u00b0c)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_wind_speed_min": {
-                    "title": "Show Wind Speed Min",
-                    "x-name": "show_wind_speed_min",
+                "show_min_wind_speed_(m/s)": {
+                    "title": "Show Min Wind Speed (m/s)",
+                    "x-name": "show_min_wind_speed_(m/s)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_wind_speed_max": {
-                    "title": "Show Wind Speed Max",
-                    "x-name": "show_wind_speed_max",
+                "show_max_wind_speed_(m/s)": {
+                    "title": "Show Max Wind Speed (m/s)",
+                    "x-name": "show_max_wind_speed_(m/s)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_wind_speed_average": {
-                    "title": "Show Wind Speed Average",
-                    "x-name": "show_wind_speed_average",
+                "show_avg_wind_speed_(m/s)": {
+                    "title": "Show Avg Wind Speed (m/s)",
+                    "x-name": "show_avg_wind_speed_(m/s)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_precipitation_absolute": {
-                    "title": "Show Precipitation Absolute",
-                    "x-name": "show_precipitation_absolute",
+                "show_precipitation_absolute_(mm)": {
+                    "title": "Show Precipitation Absolute (mm)",
+                    "x-name": "show_precipitation_absolute_(mm)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_precipitation_different": {
-                    "title": "Show Precipitation Different",
-                    "x-name": "show_precipitation_different",
+                "show_precipitation_different_(mm)": {
+                    "title": "Show Precipitation Different (mm)",
+                    "x-name": "show_precipitation_different_(mm)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_precipitation_intensive": {
-                    "title": "Show Precipitation Intensive",
-                    "x-name": "show_precipitation_intensive",
+                "show_precipitation_intensive_(mm/h)": {
+                    "title": "Show Precipitation Intensive (mm/h)",
+                    "x-name": "show_precipitation_intensive_(mm/h)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_absolute_humidity_average": {
-                    "title": "Show Absolute Humidity Average",
-                    "x-name": "show_absolute_humidity_average",
+                "show_avg_absolute_humidity": {
+                    "title": "Show Avg Absolute Humidity",
+                    "x-name": "show_avg_absolute_humidity",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_mixing_ratio_average": {
-                    "title": "Show Mixing Ratio Average",
-                    "x-name": "show_mixing_ratio_average",
+                "show_avg_mixing_ratio": {
+                    "title": "Show Avg Mixing ratio",
+                    "x-name": "show_avg_mixing_ratio",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_absolute_air_pressure_average": {
-                    "title": "Show Absolute Air Pressure Average",
-                    "x-name": "show_absolute_air_pressure_average",
+                "show_avg_absolute_air_pressure": {
+                    "title": "Show Avg Absolute Air Pressure",
+                    "x-name": "show_avg_absolute_air_pressure",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_wind_speed_km/h_average": {
-                    "title": "Show Wind Speed km/h Average",
-                    "x-name": "show_wind_speed_km/h_average",
+                "show_avg_wind_speed_(km/h)": {
+                    "title": "Show Avg Wind Speed (km/h)",
+                    "x-name": "show_avg_wind_speed_(km/h)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_wind_speed_kts_min": {
-                    "title": "Show Wind Speed kts Min",
-                    "x-name": "show_wind_speed_kts_min",
+                "show_min_wind_speed_(kts)": {
+                    "title": "Show Min Wind Speed (kts)",
+                    "x-name": "show_min_wind_speed_(kts)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_wind_speed_kts_max": {
-                    "title": "Show Wind Speed kts Max",
-                    "x-name": "show_wind_speed_kts_max",
+                "show_max_wind_speed_(kts)": {
+                    "title": "Show Max Wind Speed (kts)",
+                    "x-name": "show_max_wind_speed_(kts)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_wind_speed_kts_average": {
-                    "title": "Show Wind Speed kts Average",
-                    "x-name": "show_wind_speed_kts_average",
+                "show_avg_wind_speed_(kts)": {
+                    "title": "Show Avg Wind Speed (kts)",
+                    "x-name": "show_avg_wind_speed_(kts)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_wind_speed_standard_deviation_(m/s)": {
-                    "title": "Show Wind Speed Standard Deviation (m/s)",
-                    "x-name": "show_wind_speed_standard_deviation_(m/s)",
+                "show_std_dev_wind_speed_(m/s)": {
+                    "title": "Show Std Dev Wind Speed (m/s)",
+                    "x-name": "show_std_dev_wind_speed_(m/s)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_wind_speed_standard_deviation_(mph)": {
-                    "title": "Show Wind Speed Standard Deviation (mph)",
-                    "x-name": "show_wind_speed_standard_deviation_(mph)",
+                "show_std_dev_wind_speed_(mph)": {
+                    "title": "Show Std Dev Wind Speed (mph)",
+                    "x-name": "show_std_dev_wind_speed_(mph)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_wind_direction_standard_deviation": {
-                    "title": "Show Wind Direction Standard Deviation",
-                    "x-name": "show_wind_direction_standard_deviation",
+                "show_wind_direction_std._dev.": {
+                    "title": "Show Wind Direction std. dev.",
+                    "x-name": "show_wind_direction_std._dev.",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_wet_bulb_temperature_\u00b0c_actual": {
-                    "title": "Show Wet Bulb Temperature \u00b0C Actual",
-                    "x-name": "show_wet_bulb_temperature_\u00b0c_actual",
+                "show_wet_bulb_temperature_(\u00b0c)": {
+                    "title": "Show Wet Bulb Temperature (\u00b0C)",
+                    "x-name": "show_wet_bulb_temperature_(\u00b0c)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_wet_bulb_temperature_\u00b0f_actual": {
-                    "title": "Show Wet Bulb Temperature \u00b0F Actual",
-                    "x-name": "show_wet_bulb_temperature_\u00b0f_actual",
+                "show_wet_bulb_temperature_(\u00b0f)": {
+                    "title": "Show Wet Bulb Temperature (\u00b0F)",
+                    "x-name": "show_wet_bulb_temperature_(\u00b0f)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_specific_enthalpy_actual": {
-                    "title": "Show Specific Enthalpy Actual",
-                    "x-name": "show_specific_enthalpy_actual",
+                "show_specific_enthalpy": {
+                    "title": "Show Specific Enthalpy",
+                    "x-name": "show_specific_enthalpy",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_air_density_actual": {
-                    "title": "Show Air Density Actual",
-                    "x-name": "show_air_density_actual",
+                "show_air_density": {
+                    "title": "Show Air Density",
+                    "x-name": "show_air_density",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_external_temperature_\u00b0c_actual": {
-                    "title": "Show External Temperature \u00b0C Actual",
-                    "x-name": "show_external_temperature_\u00b0c_actual",
+                "show_external_temperature_(\u00b0c)": {
+                    "title": "Show External Temperature (\u00b0C)",
+                    "x-name": "show_external_temperature_(\u00b0c)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_external_temperature_\u00b0f_actual": {
-                    "title": "Show External Temperature \u00b0F Actual",
-                    "x-name": "show_external_temperature_\u00b0f_actual",
+                "show_external_temperature_(\u00b0f)": {
+                    "title": "Show External Temperature (\u00b0F)",
+                    "x-name": "show_external_temperature_(\u00b0f)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_wind_value_quality_fast": {
-                    "title": "Show Wind Value Quality Fast",
-                    "x-name": "show_wind_value_quality_fast",
+                "show_wind_value_quality": {
+                    "title": "Show Wind Value Quality",
+                    "x-name": "show_wind_value_quality",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_lightning_events_minute": {
-                    "title": "Show Lightning Events Minute",
-                    "x-name": "show_lightning_events_minute",
+                "show_lightning_events_(min)": {
+                    "title": "Show Lightning Events (min)",
+                    "x-name": "show_lightning_events_(min)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 },
-                "show_lightning_events_interval": {
-                    "title": "Show Lightning Events Interval",
-                    "x-name": "show_lightning_events_interval",
+                "show_lightning_events_(int.)": {
+                    "title": "Show Lightning Events (int.)",
+                    "x-name": "show_lightning_events_(int.)",
                     "x-hidden": false,
                     "type": "boolean",
-                    "default": false
+                    "default": true
                 }
             },
             "additionalElements": true,

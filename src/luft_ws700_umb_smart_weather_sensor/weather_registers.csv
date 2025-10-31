@@ -1,0 +1,38 @@
+Register number,Register address,value_name,Scaling factor, signed/unsigned,Comment
+14,13,Relative humidity (avg.), 10, s,-,
+15,17,Relative air pressure (avg.), 10, s,-,
+19,20,Wind direction (min.), 10, s,-,
+21,20,Wind direction (max.), 10, s,-,
+25,24,Compass, 10, s,-,
+26,25,Precipitation type, 1, s,-,
+30,31,Wind measurement quality, 1, u,-,
+33,30,Global radiation (avg.), 10, s,-,
+35,34,Air temperature °C (avg.), 10, s,-,
+40,39,Wind chill-temperature °C, 10, s,-,
+41,40,Heating temperature Wind °C, 10, s,-,
+42,41,Heating temperature R2S °C, 10, s,-,
+44,43,Wind speed m/s (min.), 10, s,-,
+45,44,Wind speed m/s (max.), 10, s,-,
+46,45,Wind speed m/s (avg.), 10, s,-,
+49,48,Precipitation absolute mm, 100, u,-,Limited to 655.34 mm
+50,49,Precipitation different mm, 100, u,-,Limited to 100.00 mm
+51,50,Precipitation intensive mm/h, 100, u,-,Limited to 200.00 mm/h
+75,74,Absolute humidity (avg.), 10, s,-,
+79,78,Mixing ratio (avg.), 10, s,-,
+83,82,Absolute air pressure (avg.), 10, s,-,
+87,86,Wind speed km/h (avg.), 10, s,-,
+90,89,Wind speed kts (min.), 10, s,-,
+91,90,Wind speed kts (max.), 10, s,-,
+92,91,Wind speed kts (avg.), 10, s,-,
+96,95,Wind speed standard deviation m/s, 100, s,-,Standard deviation values are available after the first request.
+97,96,Wind speed standard deviation mph, 100, s,-,Standard deviation values are available after the first request.
+98,97,Wind direction standard deviation, 100, s,-,Standard deviation values are available after the first request.
+99,98,Wet bulb temperature °C (act), 10, s,-,
+100,99,Wet bulb temperature °F (act), 10, s,-,
+101,100,Specific enthalpy (act), 10, s,-,
+102,101,Air density (act), 1000, s,-,
+108,107,External temperature °C (act), 10, s,-,
+109,108,External temperature °F (act), 10, s,-,
+110,109,Wind value quality (fast), 1, u,-,
+111,110,Lightning events (minute), 1, u,-,
+112,111,Lightning events (interval), 1, u,-,

@@ -1,6 +1,21 @@
 {
-    "simulator_app_key": "sim_app_key",
-    "digital_input_count": 1,
-    "digital_output_count": 2,
-    "a_funny_message": "yeeha"
+    "show_rel_humidity_average": true,
+    "show_rel_air_pressure": true,
+    "show_wind_direction_min": true,
+    "show_wind_direction_max": true,
+    "show_wind_measurement_quality": true,
+    "show_global_radiation_average": true,
+    "show_wind_chill_temperature": true,
+    "show_wind_speed_min": true,
+    "show_wind_speed_max": true,
+    "show_wind_speed_average": true,
+    "show_precipitation_different": true,
+    "show_mixing_ratio_average": true,
+    "show_wind_speed_kts_max": true,
+    "show_wind_speed_std_dev_ms": true,
+    "show_wind_speed_std_dev_mph": true,
+    "show_wet_bulb_temperature_f_actual": true,
+    "show_external_temperature_f_actual": true,
+    "show_lightning_events_minute": true,
+    "show_lightning_events_interval": true
 }
